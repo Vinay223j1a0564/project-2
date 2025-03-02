@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Insights Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Tech Insights</h1>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav id="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">Minimalist living</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <h2>Latest Blog Posts</h2>
+
+            <!-- Blog Post 1 -->
+            <div class="blog-post">
+                <img src="dilli_pic1.jpg" alt="JavaScript Closures">
+                <h3>What is Minimalist Living</h3>
+                <p>Minimalist living is about simplifying life by focusing on what truly matters.</p>
+                <button class="read-more" onclick="toggleContent(this)">Read More</button>
+                <p class="hidden-content">
+                    
+Minimalist living is about simplifying life by focusing on what truly matters. It’s not just about having fewer possessions, but also about decluttering your mind, digital space, and daily habits. The goal is to reduce distractions and create a life with more meaning, time, and freedom. <br><br>
+                    
+                </p>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-post">
+                <img src="dilli_pic2.jpg" alt="CSS Grid vs Flexbox">
+                <h3>Digital Minimalism:Declutter Your Digital Life</h3>
+                <p>With the rise of technology,we often get overwhelmed by notifications,</p>
+                <button class="read-more" onclick="toggleContent(this)">Read More</button>
+                <p class="hidden-content">
+                With the rise of technology, we often get overwhelmed by notifications, emails, and endless scrolling. Digital minimalism helps you take control of your devices instead of letting them control you. Start by decluttering unnecessary apps, turning off notifications, and setting screen time limits.
+                </p>
+            </div>
+            <div class="blog-post">
+                <img src="dilli_pic3.jpg" alt="Future of AI">
+                <h2>HOw to create a Minimalist home and workspace</h2>
+                <p class="short-text">
+                    A clutter-free environment leads to a clutter-free mind... 
+                </p>
+                <p class="full-text" style="display: none;">
+A clutter-free environment leads to a clutter-free mind. Adopt a "less is more" approach by keeping only essential furniture, organizing cables, and using storage solutions that keep your space clean. A simple workspace boosts productivity and reduces stress.
+                </p>
+                <a href="#" class="read-more-btn">Read More</a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Minimalist Living. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
